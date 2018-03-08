@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SoundMeter } from '../soundMeter/soundMeter';
 
 @Component({
   selector: 'page-home',
@@ -15,4 +16,7 @@ export class HomePage {
       window.open(url);
   }
 
+  navigateToDbMeter(){
+      this.navCtrl.push(SoundMeter);
+  }
 }
